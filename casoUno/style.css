@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; }
+    @media only screen and (max-width: 75em) {
+      html {
+        font-size: 56.25%; } }
+    @media only screen and (max-width: 56.25em) {
+      html {
+        font-size: 50%; } }
+    @media only screen and (min-width: 112.5em) {
+      html {
+        font-size: 75%; } }
+
+@font-face {
+    font-family: Gotham-bold;
+    src: url(./fonts/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham-book;
+    src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: Gotham-med;
+    src: url(./fonts/GothamMedium.ttf);
+}
+.header{
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(9, 33, 226, 0.22) 41.42%, rgba(0, 101, 180, 0.22) 72.61%), url(./img/trabajando-codigo.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__text{
+    text-align: center;
+    width: 119.5rem;
+    color: #fff;
+}
+
+.header__text h1{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 5.2rem;
+    margin-bottom: 2rem;
+}
+
+.header__text p{
+    font-family: Gotham-book, sans-serif;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header{
+        background-image: linear-gradient(180deg, rgba(9, 33, 226, 0.22) 41.42%, rgba(0, 101, 180, 0.22) 72.61%), url(./img/trabajando-codigo-movil.png);
+        background-size: cover;
+    }
+    .header__text{
+        padding: 0 1.5rem;
+        margin-bottom: 20rem;
+    }
+    .header__text h1 {
+        font-size: 36px; 
+    } 
+    .header__text p{
+        font-size: 22px;
+    }
+}

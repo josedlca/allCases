@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; }
+    @media only screen and (max-width: 75em) {
+      html {
+        font-size: 56.25%; } }
+    @media only screen and (max-width: 56.25em) {
+      html {
+        font-size: 50%; } }
+    @media only screen and (min-width: 112.5em) {
+      html {
+        font-size: 75%; } }
+
+@font-face {
+    font-family: Gotham-bold;
+    src: url(./fonts/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham-book;
+    src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: Gotham-med;
+    src: url(./fonts/GothamMedium.ttf);
+}
+.header{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(81, 161, 206, 0.60) 0%, rgba(225, 241, 251, 0.60) 0.01%, rgba(0, 0, 0, 0.00) 20%), url(./img/talkingOperator.png);
+    background-size: contain;
+    background-position: top;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__text{
+    text-align: center;
+    width: 119.5rem;
+    color: #fff;
+}
+
+.header__text h1{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 9.2rem;
+    margin-bottom: 2rem;
+}
+
+.header__text p{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 4.4rem;
+}
+
+.footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container{
+    width: 97.8rem;
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.footer__container--up{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    padding: 2rem 0;
+}
+
+.footer__container--up_left span{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 9.8rem;
+}
+
+.footer__container--up_left p{
+    font-family: Gotham-book, sans-serif;
+    font-size: 2.5rem;
+}
+
+.footer__container--up_middle-social{
+    margin-bottom: 3rem;
+}
+
+.footer__container--up_middle-social p{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer__container--up_middle-social ul{
+    display: inline-flex;
+}
+
+.footer__container--up_middle-social ul li{
+    margin-right: 1rem;
+}
+
+.footer__container--up_middle-combo{
+    display: inline-flex;
+}
+
+.footer__container--up_middle-contactos{
+    margin-right: 18rem;
+}
+
+.footer__container--up_middle-contactos li:first-child{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.footer__container--up_middle li{
+    list-style: none;
+    font-family: Gotham-book, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.footer__container--up_right p{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer__container--up_right span{
+    font-family: Gotham-book, sans-serif;
+    font-size: 1.2rem;
+}
+
+.footer__container--down{
+    padding: 2rem 0;
+}
+
+.footer__container--down p{
+    color: #fff;
+    font-family: Gotham-book, sans-serif;
+    font-size: 1.3rem;
+}
+
+.footer__container--down p span{
+    font-family: Gotham-bold, sans-serif;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header{
+        background-image: linear-gradient(0deg, rgba(81, 161, 206, 0.60) 0%, rgba(225, 241, 251, 0.60) 0.01%, rgba(0, 0, 0, 0.00) 20%), url(./img/talkingOperatorMovil.png);
+        background-size: cover;
+    }
+    .header__text{
+        padding: 0 1.5rem;
+        margin-bottom: 20rem;
+    }
+    .header__text h1 {
+        font-size: 36px; 
+    } 
+    .header__text p{
+        font-size: 22px;
+    }
+    .footer__container--up_left span{
+        font-family: Gotham-bold, sans-serif;
+        font-size: 3.8rem;
+    }
+    .footer__container--up_left p{
+        font-family: Gotham-book, sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .footer__container--up_middle-contactos{
+        margin-right: 3rem;
+    }
+}

@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; }
+    @media only screen and (max-width: 75em) {
+      html {
+        font-size: 56.25%; } }
+    @media only screen and (max-width: 56.25em) {
+      html {
+        font-size: 50%; } }
+    @media only screen and (min-width: 112.5em) {
+      html {
+        font-size: 75%; } }
+
+@font-face {
+    font-family: Gotham-bold;
+    src: url(./fonts/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham-book;
+    src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: Gotham-med;
+    src: url(./fonts/GothamMedium.ttf);
+}
+.header{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(81, 161, 206, 0.60) 0%, rgba(225, 241, 251, 0.60) 0.01%, rgba(0, 0, 0, 0.00) 20%), url(./img/faro.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__text{
+    text-align: center;
+    width: 119.5rem;
+    color: #fff;
+}
+
+.header__text h1{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 9.2rem;
+    margin-bottom: 2rem;
+}
+
+.header__text p{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 4.4rem;
+}
+
+.footer{
+    background-color: #0D144D;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container{
+    width: 117.8rem;
+}
+
+.footer__container--top{
+    display: flex;
+    color: #fff;
+    font-family: Gotham-book, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 0;
+}
+
+.footer__container--top_options ul{
+    list-style: none;
+    display: inline-flex;
+    font-size: 1.4rem;
+}
+
+.footer__container--top_options ul li{
+    margin: 0 2.6rem;
+}
+
+.footer__container--top_options ul li a{
+    text-decoration: none;
+    color: #fff ;
+}
+
+.footer__container--top_social{
+    display: inline-flex;
+    margin-right: 10rem;
+}
+
+.footer__container--top_social p{
+    font-size: 1.4rem;
+    margin-right: 1.8rem;
+}
+
+.footer__container--middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 6.5rem;
+    border-top: rgba(255, 255, 255, 0.2) solid 2px ;
+    border-bottom: rgba(255, 255, 255, 0.2) solid 2px;
+}
+
+.footer__container--middle_left{
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.footer__container--middle_left svg{
+    margin-right: 1.3rem;
+}
+
+.footer__container--middle_left-phone{
+    font-family: Gotham-bold, sans-serif;
+    font-size: 1.8rem;
+    display: inline-flex;
+    margin-bottom: 1.3rem;
+}
+
+.footer__container--middle_left-location{
+    font-family: Gotham-book, sans-serif;
+    font-size: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__container--middle_right{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.footer__container--middle_right-options{
+    color: #fff;
+    font-family: Gotham-med, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.21rem;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+.footer__container--middle_right-options ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+.footer__container--middle_right-options ul li{
+    margin: 0 2.35rem;
+}
+
+.footer__container--middle_right-options ul li:last-child{
+    margin-right: 0;
+}
+
+.footer__container--middle_right-discharge{
+    color: #fff;
+    font-family: Gotham-book,sans-serif;
+    font-size: 1.4rem;
+}
+
+.footer__container--middle_right-discharge ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer__container--middle_right-discharge ul li{
+    display: inline-flex;
+    margin-right: 3.5rem;
+}
+
+.footer__container--middle_right-discharge ul li:last-child{
+    margin-right: 0;
+}
+
+.footer__container--middle_right-discharge ul li:nth-child(4) svg{
+    margin-right: 1.3rem;
+}
+
+.footer__container--middle_right-discharge ul li a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__container--bottom{
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 0;
+    align-items: center;
+}
+
+.footer__container--bottom p{
+    font-family: Gotham-book, sans-serif;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__container--bottom_icon{
+    margin: 0 3.5rem;
+}
+
+.footer__container--bottom_iconTwo{
+    margin-left: 1.2rem;
+    line-height: 0;
+}
+@media only screen and (max-width: 42.5em) {
+    .header{
+        background-image: linear-gradient(0deg, rgba(81, 161, 206, 0.60) 0%, rgba(225, 241, 251, 0.60) 0.01%, rgba(0, 0, 0, 0.00) 20%), url(./img/faroMovil.png);
+        background-size: cover;
+    }
+    .header__text{
+        padding: 0 1.5rem;
+        margin-bottom: 20rem;
+    }
+    .header__text h1 {
+        font-size: 36px; 
+    } 
+    .header__text p{
+        font-size: 22px;
+    }
+
+    .footer__container--top{
+        align-items: center;
+        padding: 2rem 0;
+        flex-direction: column;
+    }
+
+    .footer__container--top_logo{
+        margin-bottom: 0.7rem;
+    }
+
+    .footer__container--top_options{
+        margin-bottom: 0.7rem;
+    }
+
+    .footer__container--top_social{
+        display: inline-flex;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .footer__container--middle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__container--middle_left{
+        margin-bottom: 1rem;
+    }
+
+    .footer__container--middle_right{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .footer__container--middle_right-options ul{
+        list-style: none;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__container--middle_right-discharge ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__container--bottom{
+        padding: 1rem 0.5rem;
+    }
+
+    .footer__container--bottom p{
+        display: inline-block;
+    }
+
+    .footer__container--bottom_icon{
+        margin: 0;
+    }
+
+    .footer__container--bottom_iconTwo{
+        margin-left: 0.2rem;
+    }
+}
