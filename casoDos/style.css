@@ -32,7 +32,7 @@ html {
 }
 .header{
     height: 100vh;
-    background-image: linear-gradient(180deg, rgba(9, 33, 226, 0.22) 41.42%, rgba(0, 101, 180, 0.22) 72.61%), url(./img/trabajando-codigo.jpg);
+    background-image: url(https://3420wmtest.sinergia.pe/assets/bg-sinergia_4.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -43,6 +43,7 @@ html {
 .header__text{
     text-align: center;
     width: 119.5rem;
+    padding: 0 1rem;
     color: #fff;
 }
 
@@ -50,21 +51,21 @@ html {
     font-family: Gotham-bold, sans-serif;
     font-size: 5.2rem;
     margin-bottom: 2rem;
+    color: #272626;
 }
 
 .header__text p{
-    font-family: Gotham-book, sans-serif;
+    font-family: Gotham-med, sans-serif;
     font-size: 3rem;
+    color: #397EEB;
 }
 
 @media only screen and (max-width: 37.5em) {
     .header{
-        background-image: linear-gradient(180deg, rgba(9, 33, 226, 0.22) 41.42%, rgba(0, 101, 180, 0.22) 72.61%), url(./img/trabajando-codigo-movil.png);
         background-size: cover;
     }
     .header__text{
         padding: 0 1.5rem;
-        margin-bottom: 20rem;
     }
     .header__text h1 {
         font-size: 36px; 

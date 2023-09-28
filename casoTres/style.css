@@ -19,6 +19,22 @@ html {
         font-size: 75%; } }
 
 @font-face {
+    font-family: bwg-ext;
+    src: url(./fonts/BwGradualDEMO-ExtraBold.otf);
+}
+@font-face {
+    font-family: bwg-bold;
+    src: url(./fonts/BwGradualDEMO-Bold.otf);
+}
+@font-face {
+    font-family: bwg-med;
+    src: url(./fonts/BwGradualDEMO-Medium.otf);
+}
+@font-face {
+    font-family: bwg-reg;
+    src: url(./fonts/BwGradualDEMO-Regular.otf);
+}
+@font-face {
     font-family: Gotham-bold;
     src: url(./fonts/GothamBold.ttf);
 }
@@ -33,7 +49,7 @@ html {
 .header{
     height: 100vh;
     background-image: linear-gradient(0deg, rgba(81, 161, 206, 0.60) 0%, rgba(225, 241, 251, 0.60) 0.01%, rgba(0, 0, 0, 0.00) 20%), url(./img/talkingOperator.png);
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     position: relative;
     display: flex;
@@ -43,6 +59,7 @@ html {
 .header__text{
     text-align: center;
     width: 119.5rem;
+    padding: 0 2rem;
     color: #fff;
 }
 
@@ -73,80 +90,75 @@ html {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #fff;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .footer__container--up_left span{
-    font-family: Gotham-bold, sans-serif;
+    font-family: bwg-ext, sans-serif;
     font-size: 9.8rem;
 }
 
 .footer__container--up_left p{
-    font-family: Gotham-book, sans-serif;
+    font-family: bwg-reg, sans-serif;
     font-size: 2.5rem;
 }
 
-.footer__container--up_middle-social{
-    margin-bottom: 3rem;
-}
-
-.footer__container--up_middle-social p{
-    font-family: Gotham-bold, sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.footer__container--up_middle-social ul{
+.footer__container--up_middle{
     display: inline-flex;
-}
-
-.footer__container--up_middle-social ul li{
-    margin-right: 1rem;
+    flex-direction: row;
 }
 
 .footer__container--up_middle-combo{
     display: inline-flex;
+    flex-direction: column;
 }
 
 .footer__container--up_middle-contactos{
-    margin-right: 18rem;
+    margin-right: 5rem;
+    margin-bottom: 1.6rem;
 }
 
-.footer__container--up_middle-contactos li:first-child{
-    font-family: Gotham-bold, sans-serif;
-    font-size: 1.5rem;
+.footer__container--up_middle-contactos li:first-child,
+.footer__container--up_middle-transparencia ul li:first-child,
+.footer__container--up_right p{
+    font-family: bwg-ext, sans-serif;
+    font-size: 2.32rem;
+    margin-bottom: 1.6rem;
 }
 
 
 .footer__container--up_middle li{
     list-style: none;
-    font-family: Gotham-book, sans-serif;
-    font-size: 1.2rem;
+    font-family: bwg-reg, sans-serif;
+    font-size: 1.76rem;
     margin-bottom: 0.6rem;
 }
 
-.footer__container--up_right p{
-    font-family: Gotham-bold, sans-serif;
-    font-size: 1.5rem;
-}
-
 .footer__container--up_right span{
-    font-family: Gotham-book, sans-serif;
-    font-size: 1.2rem;
+    font-family: bwg-reg, sans-serif;
+    font-size: 1.76rem;
 }
 
-.footer__container--down{
+.footer__container--down_movil{
+    display: none;
+}
+
+.footer__container--down,
+.footer__container--down_movil{
     padding: 2rem 0;
 }
 
-.footer__container--down p{
+.footer__container--down p,
+.footer__container--down_movil p{
     color: #fff;
-    font-family: Gotham-book, sans-serif;
-    font-size: 1.3rem;
+    font-family: bwg-reg, sans-serif;
+    font-size: 1.76rem;
 }
 
-.footer__container--down p span{
-    font-family: Gotham-bold, sans-serif;
+.footer__container--down p span,
+.footer__container--down_movil p span{
+    font-family: bwg-bold, sans-serif;
+    font-size: 1.76rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -156,7 +168,6 @@ html {
     }
     .header__text{
         padding: 0 1.5rem;
-        margin-bottom: 20rem;
     }
     .header__text h1 {
         font-size: 36px; 
@@ -164,16 +175,19 @@ html {
     .header__text p{
         font-size: 22px;
     }
-    .footer__container--up_left span{
-        font-family: Gotham-bold, sans-serif;
-        font-size: 3.8rem;
+
+    .footer__container{
+        padding: 0 1.2rem;
     }
-    .footer__container--up_left p{
-        font-family: Gotham-book, sans-serif;
-        font-size: 1.6rem;
+    .footer__container--up_middle{
+        display: none;
     }
 
-    .footer__container--up_middle-contactos{
-        margin-right: 3rem;
+    .footer__container--down{
+        display: none;
+    }
+
+    .footer__container--down_movil{
+        display: block;
     }
 }
